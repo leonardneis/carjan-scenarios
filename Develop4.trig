@@ -8,7 +8,7 @@
       carjan:map "map04" ;
       carjan:cameraPosition "up" ;
       carjan:weather "Clear" ;
-      carjan:hasEntity :Entity0403 , :Entity0402 , :Entity1003 ;
+      carjan:hasEntity :Entity0402 , :Entity1003 ;
       carjan:hasPath :Path1 , :Path2 , :Path3 , :Path4 , :Path5 , :Path6 , :Path7 ;
       carjan:hasWaypoints :Waypoint0302_5 , :Waypoint0304_8 , :Waypoint0203_1 , :Waypoint0602_2 , :Waypoint0902_4 , :Waypoint0205_6 , :Waypoint0406_2 , :Waypoint0802_2 , :Waypoint0100_0 , :Waypoint0802_0 , :Waypoint0605_4 , :Waypoint0405_7 , :Waypoint0405_2 , :Waypoint0804_1 , :Waypoint0705_6 , :Waypoint0903_1 , :Waypoint0602_0  .
 
@@ -20,15 +20,6 @@
       carjan:model "pedestrian_0007" ;
       carjan:label "Carla" ;
       carjan:color "#ff17f3"  .
-
-:Entity0403 rdf:type carjan:Pedestrian ;
-      carjan:x "4"^^xsd:integer ;
-      carjan:y "3"^^xsd:integer ;
-      carjan:heading "path";
-      carjan:followsPath "http://example.com/carla-scenario#Path5" ;
-      carjan:model "pedestrian_0031" ;
-      carjan:label "John" ;
-      carjan:color "#c82ae9"  .
 
 :Entity1003 rdf:type carjan:Vehicle ;
       carjan:x "10"^^xsd:integer ;
