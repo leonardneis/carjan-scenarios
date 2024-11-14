@@ -1,0 +1,179 @@
+@prefix : <http://example.com/carla-scenario#> .
+@prefix carjan: <http://example.com/carla-scenario#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Develop4 {
+:Develop4 rdf:type carjan:Scenario ;
+      carjan:map "map04" ;
+      carjan:cameraPosition "up" ;
+      carjan:weather "Clear" ;
+      carjan:hasEntity :Entity0403 , :Entity0402 , :Entity1003 ;
+      carjan:hasPath :Path1 , :Path2 , :Path3 , :Path4 , :Path5 , :Path6 , :Path7 ;
+      carjan:hasWaypoints :Waypoint0302_5 , :Waypoint0304_8 , :Waypoint0203_1 , :Waypoint0602_2 , :Waypoint0902_4 , :Waypoint0205_6 , :Waypoint0406_2 , :Waypoint0802_2 , :Waypoint0100_0 , :Waypoint0802_0 , :Waypoint0605_4 , :Waypoint0405_7 , :Waypoint0405_2 , :Waypoint0804_1 , :Waypoint0705_6 , :Waypoint0903_1 , :Waypoint0602_0  .
+
+:Entity0402 rdf:type carjan:Pedestrian ;
+      carjan:x "4"^^xsd:integer ;
+      carjan:y "2"^^xsd:integer ;
+      carjan:heading "path";
+      carjan:followsPath "null" ;
+      carjan:model "pedestrian_0007" ;
+      carjan:label "Carla" ;
+      carjan:color "#ff17f3"  .
+
+:Entity0403 rdf:type carjan:Pedestrian ;
+      carjan:x "4"^^xsd:integer ;
+      carjan:y "3"^^xsd:integer ;
+      carjan:heading "path";
+      carjan:followsPath "http://example.com/carla-scenario#Path5" ;
+      carjan:model "pedestrian_0031" ;
+      carjan:label "John" ;
+      carjan:color "#c82ae9"  .
+
+:Entity1003 rdf:type carjan:Vehicle ;
+      carjan:x "10"^^xsd:integer ;
+      carjan:y "3"^^xsd:integer ;
+      carjan:heading "path";
+      carjan:followsPath "http://example.com/carla-scenario#Path6" ;
+      carjan:model "Micro - Microlino" ;
+      carjan:label "Microlino" ;
+      carjan:color "#2a00fc"  .
+
+:Path1 rdf:type carjan:Path ;
+      carjan:description "Path from point A to B" ;
+      carjan:color "#000000" ;
+      carjan:hasWaypoints ( :Waypoint0302_5 :Waypoint0304_8 )  .
+
+:Path2 rdf:type carjan:Path ;
+      carjan:description "Pink Path" ;
+      carjan:color "#ff17f3" ;
+      carjan:hasWaypoints ( :Waypoint0302_5 :Waypoint0304_8 :Waypoint0205_6 :Waypoint0406_2 :Waypoint0602_0 :Waypoint0802_0 :Waypoint0804_1 )  .
+
+:Path3 rdf:type carjan:Path ;
+      carjan:description "Philipp" ;
+      carjan:color "#188a00" ;
+      carjan:hasWaypoints ( :Waypoint0602_0 :Waypoint0205_6 :Waypoint0302_5 :Waypoint0304_8 )  .
+
+:Path4 rdf:type carjan:Path ;
+      carjan:description "Straight to the point or is it" ;
+      carjan:color "#445eb7" ;
+      carjan:hasWaypoints ( :Waypoint0802_0 :Waypoint0100_0 :Waypoint0302_5 :Waypoint0205_6 :Waypoint0406_2 :Waypoint0804_1 :Waypoint0304_8 :Waypoint0406_2 :Waypoint0602_0 )  .
+
+:Path5 rdf:type carjan:Path ;
+      carjan:description "Testpfad" ;
+      carjan:color "#c82ae9" ;
+      carjan:hasWaypoints ( :Waypoint0802_0 :Waypoint0804_1 :Waypoint0705_6 :Waypoint0605_4 :Waypoint0405_7 :Waypoint0405_2 :Waypoint0406_2 )  .
+
+:Path6 rdf:type carjan:Path ;
+      carjan:description "Autos" ;
+      carjan:color "#2a00fc" ;
+      carjan:hasWaypoints ( :Waypoint0903_1 :Waypoint0203_1 )  .
+
+:Path7 rdf:type carjan:Path ;
+      carjan:description "pfad1" ;
+      carjan:color "#06c3ff" ;
+      carjan:hasWaypoints ( :Waypoint0902_4 :Waypoint0802_0 :Waypoint0602_0 )  .
+
+:Waypoint0100_0 rdf:type carjan:Waypoint ;
+      carjan:x "1"^^xsd:integer ;
+      carjan:y "0"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-left"  .
+
+:Waypoint0203_1 rdf:type carjan:Waypoint ;
+      carjan:x "2"^^xsd:integer ;
+      carjan:y "3"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-center"  .
+
+:Waypoint0205_6 rdf:type carjan:Waypoint ;
+      carjan:x "2"^^xsd:integer ;
+      carjan:y "5"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "bottom-left"  .
+
+:Waypoint0302_5 rdf:type carjan:Waypoint ;
+      carjan:x "3"^^xsd:integer ;
+      carjan:y "2"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "middle-right"  .
+
+:Waypoint0304_8 rdf:type carjan:Waypoint ;
+      carjan:x "3"^^xsd:integer ;
+      carjan:y "4"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "bottom-right"  .
+
+:Waypoint0405_2 rdf:type carjan:Waypoint ;
+      carjan:x "4"^^xsd:integer ;
+      carjan:y "5"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-right"  .
+
+:Waypoint0405_7 rdf:type carjan:Waypoint ;
+      carjan:x "4"^^xsd:integer ;
+      carjan:y "5"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "bottom-center"  .
+
+:Waypoint0406_2 rdf:type carjan:Waypoint ;
+      carjan:x "4"^^xsd:integer ;
+      carjan:y "6"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-right"  .
+
+:Waypoint0602_0 rdf:type carjan:Waypoint ;
+      carjan:x "6"^^xsd:integer ;
+      carjan:y "2"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-left"  .
+
+:Waypoint0602_2 rdf:type carjan:Waypoint ;
+      carjan:x "6"^^xsd:integer ;
+      carjan:y "2"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-right"  .
+
+:Waypoint0605_4 rdf:type carjan:Waypoint ;
+      carjan:x "6"^^xsd:integer ;
+      carjan:y "5"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "middle-center"  .
+
+:Waypoint0705_6 rdf:type carjan:Waypoint ;
+      carjan:x "7"^^xsd:integer ;
+      carjan:y "5"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "bottom-left"  .
+
+:Waypoint0802_0 rdf:type carjan:Waypoint ;
+      carjan:x "8"^^xsd:integer ;
+      carjan:y "2"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-left"  .
+
+:Waypoint0802_2 rdf:type carjan:Waypoint ;
+      carjan:x "8"^^xsd:integer ;
+      carjan:y "2"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-right"  .
+
+:Waypoint0804_1 rdf:type carjan:Waypoint ;
+      carjan:x "8"^^xsd:integer ;
+      carjan:y "4"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-center"  .
+
+:Waypoint0902_4 rdf:type carjan:Waypoint ;
+      carjan:x "9"^^xsd:integer ;
+      carjan:y "2"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "middle-center"  .
+
+:Waypoint0903_1 rdf:type carjan:Waypoint ;
+      carjan:x "9"^^xsd:integer ;
+      carjan:y "3"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-center"  .
+}
+
