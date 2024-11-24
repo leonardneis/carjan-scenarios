@@ -1,0 +1,126 @@
+@prefix : <http://example.com/carla-scenario#> .
+@prefix carjan: <http://example.com/carla-scenario#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:development3 {
+:Entity0503 rdf:type carjan:Pedestrian ;
+      carjan:x "5"^^xsd:integer ;
+      carjan:y "3"^^xsd:integer ;
+      carjan:heading "null";
+      carjan:followsPath "null" ;
+      carjan:model "null" ;
+      carjan:color "null"  .
+
+:Entity0803 rdf:type carjan:Pedestrian ;
+      carjan:x "8"^^xsd:integer ;
+      carjan:y "3"^^xsd:integer ;
+      carjan:heading "null";
+      carjan:followsPath "null" ;
+      carjan:model "null" ;
+      carjan:color "null"  .
+
+:Entity0804 rdf:type carjan:Pedestrian ;
+      carjan:x "8"^^xsd:integer ;
+      carjan:y "4"^^xsd:integer ;
+      carjan:heading "path";
+      carjan:followsPath "http://example.com/carla-scenario#Path1" ;
+      carjan:model "pedestrian_0007" ;
+      carjan:label "CarlaEspinosa" ;
+      carjan:color "#ff17f3"  .
+
+:Path1 rdf:type carjan:Path ;
+      carjan:description "Pink Path" ;
+      carjan:color "#ff17f3" ;
+      carjan:hasWaypoints ( :Waypoint0502_4 :Waypoint0804_4 :Waypoint0304_5 )  .
+
+:Path2 rdf:type carjan:Path ;
+      carjan:description "Blue Path" ;
+      carjan:color "#2f81c8" ;
+      carjan:hasWaypoints ( :Waypoint0804_4 :Waypoint0304_5 )  .
+
+:Path3 rdf:type carjan:Path ;
+      carjan:description "pathmode" ;
+      carjan:color "#000000"  .
+
+:Path4 rdf:type carjan:Path ;
+      carjan:description "Rundkurs" ;
+      carjan:color "#e68800" ;
+      carjan:hasWaypoints ( :Waypoint0804_4 :Waypoint0502_4 :Waypoint0401_8 :Waypoint0302_6 :Waypoint0203_7 :Waypoint0304_5 :Waypoint0405_3 :Waypoint0605_2 :Waypoint0704_1 :Waypoint0904_0 )  .
+
+:Path5 rdf:type carjan:Path ;
+      carjan:description "taking the long way home" ;
+      carjan:color "#000000"  .
+
+:Waypoint0203_7 rdf:type carjan:Waypoint ;
+      carjan:x "2"^^xsd:integer ;
+      carjan:y "3"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "bottom-center"  .
+
+:Waypoint0302_6 rdf:type carjan:Waypoint ;
+      carjan:x "3"^^xsd:integer ;
+      carjan:y "2"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "bottom-left"  .
+
+:Waypoint0304_5 rdf:type carjan:Waypoint ;
+      carjan:x "3"^^xsd:integer ;
+      carjan:y "4"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "middle-right"  .
+
+:Waypoint0401_8 rdf:type carjan:Waypoint ;
+      carjan:x "4"^^xsd:integer ;
+      carjan:y "1"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "bottom-right"  .
+
+:Waypoint0405_3 rdf:type carjan:Waypoint ;
+      carjan:x "4"^^xsd:integer ;
+      carjan:y "5"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "middle-left"  .
+
+:Waypoint0502_4 rdf:type carjan:Waypoint ;
+      carjan:x "5"^^xsd:integer ;
+      carjan:y "2"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "middle-center"  .
+
+:Waypoint0605_2 rdf:type carjan:Waypoint ;
+      carjan:x "6"^^xsd:integer ;
+      carjan:y "5"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-right"  .
+
+:Waypoint0704_1 rdf:type carjan:Waypoint ;
+      carjan:x "7"^^xsd:integer ;
+      carjan:y "4"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-center"  .
+
+:Waypoint0804_4 rdf:type carjan:Waypoint ;
+      carjan:x "8"^^xsd:integer ;
+      carjan:y "4"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "middle-center"  .
+
+:Waypoint0904_0 rdf:type carjan:Waypoint ;
+      carjan:x "9"^^xsd:integer ;
+      carjan:y "4"^^xsd:integer;
+      carjan:waitTime "0"^^xsd:integer ;
+      carjan:positionInCell "top-left"  .
+
+:development3 rdf:type carjan:Scenario ;
+      carjan:map "map04" ;
+      carjan:cameraPosition "up" ;
+      carjan:weather "Cloudy" ;
+      carjan:showGrid "true" ;
+      carjan:showPaths "true" ;
+      carjan:loadLayers "true" ;
+      carjan:hasEntity :Entity0803 , :Entity0804 , :Entity0503 ;
+      carjan:hasPath :Path1 , :Path2 , :Path3 , :Path4 , :Path5 ;
+      carjan:hasWaypoints :Waypoint0302_6 , :Waypoint0304_5 , :Waypoint0904_0 , :Waypoint0502_4 , :Waypoint0804_4 , :Waypoint0405_3 , :Waypoint0203_7 , :Waypoint0605_2 , :Waypoint0401_8 , :Waypoint0704_1  .
+}
+
