@@ -1,0 +1,15 @@
+@prefix : <http://example.com/carla-scenario#> .
+@prefix carjan: <http://example.com/carla-scenario#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:CurrentScenario {
+:CurrentScenario rdf:type carjan:Scenario ;
+      carjan:map "map01" ;
+      carjan:cameraPosition "up" ;
+      carjan:weather "Clear" ;
+      carjan:showGrid "false" ;
+      carjan:showPaths "false" ;
+      carjan:loadLayers "false"  .
+}
+
